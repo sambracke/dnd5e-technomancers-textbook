@@ -1711,6 +1711,18 @@ DND5E.armorClasses = {
     label: "DND5E.ArmorClassDraconic",
     formula: "13 + @abilities.dex.mod"
   },
+  battleMechHellion: {
+    label: "DND5E.ArmorClassBattleMechHellion",
+    formula: "12 + @abilities.dex.mod"
+  },
+  battleMechValkyrie: {
+    label: "DND5E.ArmorClassBattleMechValkyrie",
+    formula: "14 + @abilities.dex.mod"
+  },
+  battleMechTitan: {
+    label: "DND5E.ArmorClassBattleMechTitan",
+    formula: "16"
+  },
   unarmoredMonk: {
     label: "DND5E.ArmorClassUnarmoredMonk",
     formula: "10 + @abilities.dex.mod + @abilities.wis.mod"
@@ -1956,6 +1968,15 @@ DND5E.itemProperties = {
   amm: {
     label: "DND5E.Item.Property.Ammunition"
   },
+  automatic: {
+    label: "DND5E.Item.Property.Automatic"
+  },
+  blast: {
+    label: "DND5E.Item.Property.Blast"
+  },
+  burstfire: {
+    label: "DND5E.Item.Property.Burst-Fire"
+  },
   concentration: {
     label: "DND5E.Item.Property.Concentration",
     abbreviation: "DND5E.ConcentrationAbbr",
@@ -1969,6 +1990,9 @@ DND5E.itemProperties = {
   fir: {
     label: "DND5E.Item.Property.Firearm"
   },
+  flamethrower: {
+    label: "DND5E.Item.Property.Flamethrower"
+  },
   foc: {
     label: "DND5E.Item.Property.Focus"
   },
@@ -1980,6 +2004,12 @@ DND5E.itemProperties = {
   },
   lod: {
     label: "DND5E.Item.Property.Loading"
+  },
+  marine: {
+    label: "DND5E.Item.Property.Marine"
+  },
+  massive: {
+    label: "DND5E.Item.Property.Massive"
   },
   material: {
     label: "DND5E.Item.Property.Material",
@@ -2006,6 +2036,12 @@ DND5E.itemProperties = {
     icon: "systems/dnd5e/icons/svg/items/spell.svg",
     reference: "Compendium.dnd5e.rules.JournalEntry.NizgRXLNUqtdlC1s.JournalEntryPage.FjWqT5iyJ89kohdA",
     isTag: true
+  },
+  scatter: {
+    label: "DND5E.Item.Property.Scatter"
+  },
+  scoped: {
+    label: "DND5E.Item.Property.Scoped"
   },
   sil: {
     label: "DND5E.Item.Property.Silvered",
