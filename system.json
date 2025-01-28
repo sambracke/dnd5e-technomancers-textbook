@@ -1,35 +1,33 @@
 {
-  "id": "dnd5e",
-  "title": "Dungeons & Dragons Fifth Edition",
+  "id": "dnd5e-technomancers-textbook",
+  "title": "Dungeons & Dragons Fifth Edition with Technomancer's Textbook by Mogrit",
   "description": "A system for playing the fifth edition of the world's most popular role-playing game in the Foundry Virtual Tabletop environment.",
   "version": "4.2.2",
   "compatibility": {
     "minimum": "12.331",
     "verified": "13.335"
   },
-  "url": "https://github.com/foundryvtt/dnd5e/",
-  "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
-  "download": "https://github.com/foundryvtt/dnd5e/releases/download/release-4.2.2/dnd5e-release-4.2.2.zip",
+  "url": "https://github.com/sambracke/dnd5e-technomancers-textbook/",
+  "manifest": "https://raw.githubusercontent.com/sambracke/dnd5e-technomancers-textbook/master/system.json",
+  "download": "https://github.com/sambracke/dnd5e-technomancers-textbook/archive/refs/tags/main.zip",
   "authors": [
     {
-      "name": "Atropos",
-      "url": "https://foundryvtt.com",
-      "flags": {}
+      "name": "Sam Bracke"
     }
   ],
-  "esmodules": [
-    "dnd5e.mjs"
-  ],
-  "styles": [
-    "dnd5e.css"
-  ],
+  "esmodules": ["dnd5e.mjs"],
+  "styles": ["dnd5e.css"],
   "documentTypes": {
     "ActiveEffect": {
       "enchantment": {}
     },
     "Actor": {
       "character": {
-        "htmlFields": ["details.biography.value", "details.biography.public", "bastion.description"]
+        "htmlFields": [
+          "details.biography.value",
+          "details.biography.public",
+          "bastion.description"
+        ]
       },
       "npc": {
         "htmlFields": ["details.biography.value", "details.biography.public"]
@@ -47,19 +45,39 @@
     },
     "Item": {
       "weapon": {
-        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
       },
       "equipment": {
-        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
       },
       "consumable": {
-        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
       },
       "tool": {
-        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
       },
       "loot": {
-        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
       },
       "race": {
         "htmlFields": ["description.value", "description.chat"]
@@ -80,10 +98,18 @@
         "htmlFields": ["description.value", "description.chat"]
       },
       "container": {
-        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
       },
       "backpack": {
-        "htmlFields": ["description.value", "description.chat", "unidentified.description"]
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
       },
       "facility": {
         "htmlFields": ["description.value", "description.chat"]
@@ -145,7 +171,15 @@
       "private": false,
       "flags": {
         "dnd5e": {
-          "types": ["weapon", "equipment", "consumable", "tool", "loot", "feat", "container"]
+          "types": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "tool",
+            "loot",
+            "feat",
+            "container"
+          ]
         }
       }
     },
@@ -279,11 +313,7 @@
       "name": "D&D SRD Content",
       "sorting": "m",
       "color": "#cd2c1e",
-      "packs": [
-        "rules",
-        "tables",
-        "heroes"
-      ],
+      "packs": ["rules", "tables", "heroes"],
       "folders": [
         {
           "name": "Character Features",
@@ -301,20 +331,13 @@
           "name": "Items & Spells",
           "sorting": "m",
           "color": "#941919 ",
-          "packs": [
-            "items",
-            "spells",
-            "tradegoods"
-          ]
+          "packs": ["items", "spells", "tradegoods"]
         },
         {
           "name": "Monsters",
           "sorting": "m",
           "color": "#7d160c",
-          "packs": [
-            "monsters",
-            "monsterfeatures"
-          ]
+          "packs": ["monsters", "monsterfeatures"]
         }
       ]
     }
